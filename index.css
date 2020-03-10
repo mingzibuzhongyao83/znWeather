@@ -1,0 +1,322 @@
+html,
+body,
+.bigBox {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    min-height: 6.67rem;
+}
+
+.system {
+    height: 24px;
+
+}
+
+.bigBox {
+    background-image: url(images/morning.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    font-size: 16px;
+    min-height: 6.67rem;
+}
+
+#auto-img {
+    width: 100%;
+    display: block;
+}
+
+.header {
+    width: 100%;
+    height: 0.56rem;
+    /* background-color: #57b1ee; */
+}
+
+.search {
+    width: 100%;
+    height: 100%;
+
+}
+
+.search>input {
+    display: inline-block;
+    width: 2.63rem;
+    height: 0.3rem;
+    margin: 0.12rem 0.31rem;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    padding: 0.03rem 0.4rem 0.03rem 0.1rem;
+    background-color: rgba(89, 96, 84, 0.4);
+    color: #fff;
+
+
+    /* text-indent: .3rem */
+    font-size: 0.13rem;
+    position: relative;
+}
+
+.search>input::-webkit-input-placeholder {
+    color: #fff;
+    font-size: 0.13rem;
+
+}
+
+.search>img {
+    width: 0.25rem;
+    height: 0.25rem;
+    position: absolute;
+    right: 0.41rem;
+    top: calc(0.18rem + 24px);
+}
+
+.city {
+    color: #fff;
+    font-size: 0.2rem;
+    height: 0.3rem;
+}
+
+.city>span {
+    display: block;
+    text-align: center;
+    margin: 0.1rem auto 0;
+}
+
+.temperature {
+    margin-top: 0.3rem;
+    height: 0.88rem;
+}
+
+.temperature-top>.tmp {
+    color: #fff;
+    font-size: 0.55rem;
+}
+
+.temperature-top>.du {
+    color: #fff;
+    font-size: 0.55rem;
+}
+
+
+.temperature-top,
+.temperature-bottom>span {
+    display: block;
+    text-align: center;
+}
+
+.temperature-bottom {
+    color: #fff;
+    font-size: 0.12rem;
+    /* padding-right: 0.1rem; */
+}
+
+.temperature-bottom>div {
+    width: 2rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+.centre {
+    width: 80%;
+    overflow: hidden;
+    margin: 0.3rem auto 0;
+    height: 0.33rem;
+}
+
+.centre>div {
+    width: calc(33.3% - 1px);
+    float: left;
+    color: #fff;
+    text-align: center;
+    border-right: 1px solid #dddddd;
+}
+
+.centre>div:nth-child(3) {
+    border: none;
+}
+
+.windone,
+.visibilityone,
+.humidityone {
+    font-size: 0.15rem;
+}
+
+.windtwo,
+.visibilitytwo,
+.humiditytwo {
+    font-size: 0.1rem;
+}
+
+.warn {
+    text-align: center;
+    font-size: 0.1rem;
+    color: #fff;
+    margin-top: 0.2rem;
+    /* margin-bottom: 0.2rem; */
+    height: 0.13rem;
+}
+
+.weatherForecast {
+    width: 100%;
+    height: 1.55rem;
+    margin-top: 0.3rem;
+}
+
+.hourWeather {
+    height: 0.17rem;
+    margin: 0.2rem auto;
+
+}
+
+.hourWeather>span {
+    display: block;
+    font-size: 0.12rem;
+    color: #fff;
+    text-align: center;
+    border-bottom: 1px solid #dddddd;
+    width: 0.5rem;
+    margin: 0 auto;
+}
+
+.hourWeather-box {
+    width: 3.5rem;
+    overflow: hidden;
+    margin: 0.2rem auto 0;
+    overflow-x: scroll;
+}
+
+.hourWeather-bottom {
+    width: 20rem;
+    height: 1.1rem;
+    white-space: nowrap;
+
+}
+
+.hourWeather-bottom>div {
+    width: 0.9rem;
+    float: left;
+    text-align: center;
+
+}
+
+.hourWeather-bottom>div>.img {
+    width: 0.25rem;
+    height: 0.25rem;
+    margin: 0.2rem auto 0.1rem;
+}
+
+.weatherBox {
+    color: #fff;
+    height: 1.1rem;
+}
+
+.weatherText,
+.number {
+    font-size: 0.13rem;
+    height: 0.17rem;
+}
+
+.weatherText {
+    width: 100%;
+}
+
+.weatherText>span {
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.time {
+    font-size: 0.15rem;
+    height: 0.2rem;
+}
+
+.future {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    /* top: 0; */
+    transition: all .4s linear;
+
+
+
+}
+
+.future-top {
+    text-align: center;
+    color: #fff;
+    height: 0.3rem;
+    font-size: 0.16rem;
+    line-height: 0.3rem;
+}
+
+.conceal {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* background-color: #ddd; */
+    /* transition: all .4s linear; */
+    overflow-y: scroll;
+
+}
+
+
+.conceal>li {
+    overflow: hidden;
+    height: 0.4rem;
+    padding: 0 0.2rem;
+    color: #000;
+    border-bottom: 1px solid #fff;
+}
+
+.conceal>li>div {
+    float: left;
+    width: 33.333%;
+    line-height: 0.4rem;
+    font-size: 0.13rem;
+}
+
+.conceal-img {
+    overflow: hidden;
+}
+
+.conceal-img>.img {
+    width: 0.25rem;
+    height: 0.25rem;
+    margin: 0.07rem 0.02rem 0.07rem 0;
+}
+
+.conceal-img>.img>img {
+    width: 0.25rem;
+    height: 0.25rem;
+}
+
+.conceal-img>div {
+    height: 0.4rem;
+    float: left;
+
+}
+
+.conceal>li>.conceal-img>.conceal-text {
+    width: 0.8rem;
+}
+
+.conceal>li>.conceal-img>.conceal-text>span {
+    display: inline-block;
+    width: 0.8rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.future-number>span {
+    display: block;
+    text-align: right;
+}
+
+.hide {
+    display: none;
+}

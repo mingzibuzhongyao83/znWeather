@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <title>渣男天气</title>
+
+</head>
+
+<body>
+    <div class="bigBox">
+
+        <!-- 系统状态栏 -->
+        <div class="system"></div>
+
+        <!-- 头部搜索 -->
+        <div class="header">
+            <div class="search">
+                <input type="text" placeholder="搜索城市天气">
+                <img id="search auto-img" src="./images/sousuo.png" alt="">
+            </div>
+        </div>
+
+        <!-- 城市名称 -->
+        <div class="city">
+            <span>石家庄</span>
+        </div>
+
+        <!-- 城市天气信息 -->
+        <div class="temperature">
+            <div class="temperature-top"><span class="tmp"></span><span class="du">°</span></div>
+            <div class="temperature-bottom">
+                <div>
+                    <span class="nowcond_txt">晴</span>&nbsp;&nbsp;<span class="nowfl"></span>
+                </div>
+            </div>
+        </div>
+        <!-- 城市天气信息 -->
+        <div class="centre">
+            <div class="wind">
+                <div class="windone">3级</div>
+                <div class="windtwo">东北风</div>
+            </div>
+            <div class="visibility">
+                <div class="visibilityone">24km</div>
+                <div class="visibilitytwo">能见度</div>
+            </div>
+            <div class="humidity">
+                <div class="humidityone">15%</div>
+                <div class="humiditytwo">湿度</div>
+            </div>
+        </div>
+        <!-- 城市天气信息 -->
+        <div class="warn">
+            <span>未来6小时石家庄暴雨预警</span>
+
+        </div>
+        <!-- 城市24小时天气信息 -->
+        <div class="weatherForecast">
+            <div class="hourWeather">
+                <span>逐时预报</span>
+            </div>
+            <div class="hourWeather-box">
+                <div class="hourWeather-bottom"></div>
+            </div>
+        </div>
+        <!-- 城市未来7天天气信息 -->
+        <div class="future">
+            <div class="future-top" data-name="0">
+                <span>点击查看未来7天天气</span>
+            </div>
+            <ul class="conceal hide">
+            </ul>
+        </div>
+
+    </div>
+
+
+    <script src="rem.js"></script>
+    <script src="./jquery-3.4.1.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
